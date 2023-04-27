@@ -1,0 +1,27 @@
+{
+  "name": "@dwidge/buildy",
+  "version": "0.1.0",
+  "description": "ESBuild with env",
+  "exports": {
+    "./*": "./lib/*.js"
+  },
+  "bin": {
+    "buildy": "./lib/build.js",
+    "servey": "./lib/serve.js"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {},
+  "keywords": [],
+  "author": "DWJ",
+  "license": "BSL-1.0",
+  "devDependencies": {},
+  "dependencies": {
+    "esbuild": "^0.17.15",
+    "opener": "^1.5.2",
+    "portfinder": "^1.0.32"
+  }
+}
