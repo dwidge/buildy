@@ -1,6 +1,8 @@
 # @dwidge/buildy
 
-ESBuild with filtered env. Use env-cmd or dotenv/config for .env files, cross-env for package scripts.
+Simple esbuild with filtered env.
+
+Use env-cmd or dotenv/config for .env files, cross-env for package scripts.
 
 ## usage
 
@@ -10,9 +12,9 @@ pnpm i -D @dwidge/buildy env-cmd http-server
 
 ```json
 "scripts": {
-    "dev": "servey src=src/index.tsx out=public prefix=REACT_APP_",
-    "build": "buildy src=src/index.tsx out=build prefix=REACT_APP_",
-    "start": "pnpx http-server build -o"
+    "dev": "servey src=src/index.tsx env=REACT_APP_ dir=public port=3000",
+    "build": "buildy src=src/index.tsx env=REACT_APP_ dir=public out=build",
+    "start": "pnpx http-server build -o -p3000"
 }
 ```
 

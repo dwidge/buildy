@@ -1,7 +1,7 @@
 {
   "name": "@dwidge/buildy",
   "version": "0.1.1",
-  "description": "ESBuild with env",
+  "description": "Simple esbuild with env.",
   "exports": {
     "./*": "./lib/*.js"
   },
