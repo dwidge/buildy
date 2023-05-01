@@ -13,7 +13,7 @@ pnpm i -D @dwidge/buildy env-cmd http-server
 ```json
 "scripts": {
     "dev": "servey src=src/index.tsx env=REACT_APP_ dir=public port=3000",
-    "build": "buildy src=src/index.tsx env=REACT_APP_ dir=public out=build",
+    "build": "buildy src=src/index.tsx env=REACT_APP_ dir=public out=build meta=tmp/meta.json",
     "start": "pnpx http-server build -o -p3000"
 }
 ```
