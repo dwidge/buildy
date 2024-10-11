@@ -4,7 +4,7 @@ Simple esbuild with filtered env.
 
 Use env-cmd or dotenv/config for .env files, cross-env for package scripts.
 
-## usage
+# Usage
 
 ```bash
 pnpm i -D @dwidge/buildy env-cmd http-server
@@ -50,3 +50,9 @@ cli
 
 process.env { REACT_APP_API: "http://localhost:4444" }
 ```
+
+# License
+
+Copyright DWJ 2024.  
+Distributed under the Boost Software License, Version 1.0.  
+https://www.boost.org/LICENSE_1_0.txt

@@ -2,6 +2,10 @@
   "name": "@dwidge/buildy",
   "version": "0.1.8",
   "description": "Simple esbuild with env.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwidge/buildy.git"
+  },
   "exports": {
     "./*": "./lib/*.js"
   },
@@ -23,5 +27,12 @@
     "esbuild": "^0.17.15",
     "opener": "^1.5.2",
     "portfinder": "^1.0.32"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@9.7.1",
+  "engines": {
+    "node": ">=20"
   }
 }
